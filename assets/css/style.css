@@ -1,0 +1,341 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+html,
+body {
+  margin: 0;
+  height: 100%;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+
+#hamnav {
+  z-index: 100;
+  width: 100%;
+  background: #3680bf;
+  position: sticky;
+  top: 0;
+}
+
+.error {
+  color: red;
+}
+
+#hamitems {
+  display: flex;
+}
+#hamitems a {
+  flex-grow: 1;
+  flex-basis: 0;
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+}
+#hamitems a:hover {
+  background: #2984d2;
+}
+
+#hamnav label,
+#hamburger {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  #hamitems a {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    border-top: 1px solid #3680bf;
+  }
+
+  #hamnav label {
+    display: inline-block;
+    color: white;
+    background: #2984d2;
+    font-style: normal;
+    font-size: 1.2em;
+    padding: 10px;
+  }
+
+  #hamitems {
+    display: none;
+  }
+  #hamnav input:checked ~ #hamitems {
+    display: block;
+  }
+}
+
+.colorOfBlock {
+  background-color: #3680bf;
+  color: whitesmoke;
+}
+
+#fontColor {
+  color: whitesmoke;
+}
+
+.gold {
+  color: #ffd700;
+}
+
+.items {
+  display: flex;
+  justify-content: center;
+}
+
+.hero-section {
+  background: url(../img/bg.jpeg) 50% no-repeat;
+  background-size: cover;
+  min-height: 760px;
+
+  text-align: center;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.title {
+  font-size: 70px;
+  font-family: "Sedgwick Ave", cursive;
+  color: aliceblue;
+  text-shadow: 1.4px 1.4px black;
+}
+
+.marketing-site-content-section {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.marketing-site-content-section .button.round {
+  border-radius: 5000px;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+
+.marketing-site-content-section .marketing-site-content-section-img {
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center;
+  -webkit-flex: 1 0 100%;
+  -ms-flex: 1 0 100%;
+  flex: 1 0 100%;
+}
+
+.marketing-site-content-section .marketing-site-content-section-img img {
+  width: 100%;
+}
+
+@media screen and (min-width: 40em) {
+  .marketing-site-content-section .marketing-site-content-section-img {
+    -webkit-flex: 1 0 50%;
+    -ms-flex: 1 0 50%;
+    flex: 1 0 50%;
+  }
+}
+
+.marketing-site-content-section .marketing-site-content-section-block {
+  padding: 1rem;
+  -webkit-flex: 1 0 100%;
+  -ms-flex: 1 0 100%;
+  flex: 1 0 100%;
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
+  background: #e6e6e6;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+
+@media screen and (min-width: 40em) {
+  .marketing-site-content-section .marketing-site-content-section-block {
+    -webkit-flex: 1 0 50%;
+    -ms-flex: 1 0 50%;
+    flex: 1 0 50%;
+    padding: 2rem;
+  }
+}
+
+.marketing-site-content-section-block-header {
+  font-size: 24px;
+}
+
+.marketing-site-content-section-block-subheader {
+  font-size: 13px;
+}
+
+.divide {
+  padding-top: 48px;
+  padding-bottom: 48px;
+  margin-bottom: 0px;
+}
+
+.divideGallery {
+  padding-top: 38px;
+  padding-bottom: 38px;
+  margin-bottom: 55px;
+}
+
+.hero-full-screen .bottom-content-section {
+  padding: 1rem;
+}
+
+.hero-full-screen .bottom-content-section svg {
+  height: 3.75rem;
+  width: 3.75rem;
+  fill: #fefefe;
+}
+
+.card-user-container .card-user-avatar .user-image {
+  display: block;
+  margin: auto;
+  border-radius: 50%;
+  width: 11.875rem;
+  height: 11.875rem;
+  padding: 0.9375rem;
+}
+
+.card-user-container .card-user-avatar .user-image:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.img-hover-zoom {
+  height: 300px;
+  overflow: hidden;
+}
+
+.img-hover-zoom img {
+  transition: transform 0.5s ease;
+}
+
+.img-hover-zoom:hover img {
+  transform: scale(1.1);
+}
+
+.form-position {
+  margin-top: 60px;
+  margin-bottom: 50px;
+}
+
+.heightDiv {
+  margin-top: 80px;
+  margin-bottom: 79px;
+}
+
+.formCard {
+  display: flex;
+  justify-content: center;
+}
+
+.position {
+  display: flex;
+  justify-content: center;
+}
+
+.btn {
+  background-color: #3680bf;
+  color: #fefefe;
+  display: flex;
+  justify-content: center;
+  padding: 14px;
+  padding-left: 70px;
+  padding-right: 70px;
+}
+
+.inf {
+  text-align: center;
+}
+
+.formParagraph {
+  box-shadow: 3px;
+}
+
+.form-margin {
+  margin-top: 5px;
+  margin-left: 65px;
+  margin-right: 65px;
+}
+
+.titleForm {
+  font-family: "Sedgwick Ave", cursive;
+  margin-top: 40px;
+  color: #3680bf;
+}
+
+#form-room-name {
+  background-color: aliceblue;
+}
+
+/*.no-arrow div.arrow{
+  display: block;
+}*/
+
+.warning .txt {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 10000;
+  top: 0;
+  text-align: center;
+}
+
+.no-arrow div.arrow,
+.no-es6array div.es6array,
+.no-es6collections div.es6collections,
+.no-es6math div.es6math,
+.no-es6number div.es6number,
+.no-es6object div.es6object,
+.no-es6string div.es6string,
+.no-generators div.generators,
+.no-promises div.promises,
+.no-setclasses div.setclasses {
+  display: block;
+}
+
+.warning {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 99999;
+  overflow: auto;
+}
+
+.overlay-background {
+  display: block;
+  position: fixed;
+  top: 0%;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  z-index: 1000;
+}
